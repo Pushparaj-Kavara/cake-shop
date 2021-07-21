@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=100vw, initial-scale=1.0">
+  <title>Cake Order - Sweet’s Cake Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header of Website -->
+  <header id="logo-header" class="name-logo-contact">
+    <div class="row" style="height: 150px; text-align: center;">
+      <div class="col-md-2">
+        <img src="./images/cake-shop-logo-vector-illustration.jpg" height="150px" width="auto" alt="Cake Shop Logo">
+      </div>
+      <div class="col-md-6 head">
+        <h1 style="text-shadow: 2px 2px 8px gray;">Sweet Cake Shop</h1>
+      </div>
+      <div class="col-md-4 head">
+        <h2 style="text-shadow: 2px 2px 8px gray;">Contact No. 986596563</h2>
+      </div>
+    </div>
+  </header>
+  
+  <div style="margin-top: 15px;" class="container">
+    <div class="row">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h2 style="text-align: center;">Fill the Form to Order you Customized Cake</h2>
+              <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="nameOrder" placeholder="Enter Your Name">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="emailOrder" placeholder="email@example.com">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Address</label>
+                <div class="col-sm-10">
+                  <textarea id="addressOrder" class="form-contorl reviewText" placeholder="Enter your Address" rows="5"></textarea>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Phone</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="phoneOrder" placeholder="+91-XXXXXXXXXX">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Weight (in Kg)</label>
+                <div class="col-sm-10">
+                  <input type="number" min="0.25" max="10" class="form-control" id="weightOrder" placeholder="select weight of Cake">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Flavour</label>
+                <div class="col-sm-10">
+                  <select id="flavourOrder" class="form-select" aria-label="Default select example">
+                    <option value="chocolate" selected>Chocolate</option>
+                    <option value="coffee">Coffee</option>
+                    <option value="funfetti">Funfetti</option>
+                    <option value="pineapple">Pineapple</option>
+                    <option value="lemon">Lemon</option>
+                    <option value="balckForest">Balck Forest</option>
+                    <option value="vanilla">Vanilla</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Toppings</label>
+                <div class="col-sm-10">
+                  <select id="toppingsOrder" class="form-select" aria-label="Default select example">
+                    <option value="chocoChip" selected>Choco Chip</option>
+                    <option value="marzipan">Marzipan</option>
+                    <option value="pouredFondant">Poured Fondant</option>
+                    <option value="royalIcing">Royal Icing</option>
+                    <option value="mirrorGlaze">Mirror Glaze</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Type</label>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="eggless">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Eggless
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="withEgg">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      With Egg
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Rate (per Kg)</label>
+                <div class="col-sm-10">
+                  <input type="text" readonly class="form-control" value="1000.00">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Delivery</label>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="homeDelivery">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Do you want Home Delivery ?
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <button class="align-center btn btn-primary" onclick="placeOrder();">Place Order</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer of The Page -->
+  <footer>
+    <div class="footer-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 style="text-align: center;">Contact Details</h2>
+            <table>
+              <tr>
+                <td>Email:</td>
+                <td>sweetscakeshop@gmail.com</td>
+              </tr>
+              <tr>
+                <td rowspan>Address:</td>
+                <td>Ward 8/F, Plot 896, Street </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>69, Ahmedabad, Gujarat</td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td>986596563</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-8">
+            <h3 style="text-align: center;">About Us</h3>
+            <p>
+              Sweet's Cake Shop is focused on getting the joy your festival. We guarantee the quality 
+              in every single step of assembling the cake. We utilize 100 % Eggless Cake blend for 
+              Eggless Cakes and Pastries. We use Trans Fat-Free cream for all cakes and baked goods. 
+              Individuals who are cognizant about their wellbeing they can eat our cake without a doubt. 
+              For chocolate darlings, our ideal blends and exact elements for chocolate cakes, baked 
+              goods and sweets give a magnificent taste.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          Copyrights &copy; Sweet's Cake Shop
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

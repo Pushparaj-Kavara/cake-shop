@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-logo-contact {
+    background-color: lightgreen;
+}
+
+.form-card {
+    margin: 15px 120px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card {
+    box-shadow: 1px 0px 4px gray;
+}
+
+.reviewText {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.footer-details {
+    background-color: #212529;
+    color: #ffffff;
+    margin-top: 25px;
+    padding: 30px;
+}
+
+footer li {
+    list-style-type: none;
+}
+
+tr, td {
+    padding: 5px;
+}
+
+.footerNote {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    .name-logo-contact {
+        height: 230px;
+    }
+    .form-card {
+        margin: 15px;
+    }
+}

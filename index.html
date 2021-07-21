@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=100vw, initial-scale=1.0">
+  <title>Sweet's Cake Shop</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header of Website -->
+  <header id="logo-header" class="name-logo-contact">
+    <div class="row" style="height: 150px; text-align: center;">
+      <div class="col-md-2">
+        <img src="./images/cake-shop-logo-vector-illustration.jpg" height="150px" width="auto" alt="Cake Shop Logo">
+      </div>
+      <div class="col-md-6 head">
+        <h1 style="text-shadow: 2px 2px 8px gray;">Sweet Cake Shop</h1>
+      </div>
+      <div class="col-md-4 head">
+        <h2 style="text-shadow: 2px 2px 8px gray;">Contact No. 986596563</h2>
+      </div>
+    </div>
+  </header>
+  <!-- Navigation Bar of Website -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand">Navbar</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a id="home" onclick="navClick(this);" class="nav-link active" aria-current="page" href="#logo-header">Home</a>
+          </li>
+          <li class="nav-item">
+            <a id="order" onclick="navClick(this);" class="nav-link" href="#order-online">Order Online</a>
+          </li>
+          <li class="nav-item">
+            <a id="reviews" onclick="navClick(this);" class="nav-link" href="#cust-reviews">Customer Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a id="leaveRe" onclick="navClick(this);" class="nav-link" href="#leaveReview">Leave a Review</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- Carousel of Different Cakes that are best -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./images/carousel 1 edited.jpg" class="d-block w-100" alt="Cake Image 1">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/carousel 2 edited.jpg" class="d-block w-100" alt="Cake Image 2">
+      </div>
+      <div class="carousel-item">
+        <img src="./images/carousel 3 edited.jpg" class="d-block w-100" alt="Cake Image 3">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Card which leads to Details Form -->
+  <div id="order-online" class="form-card">
+    <div class="card" width="100%">
+        <img src="./images/carousel 2.jpg" />
+        <div class="card-body">
+          <h3>
+            Get the best ever Cakes, Professionally Made with a variety of Flovours!
+          </h3>
+          <a href="orderCake.html" class="btn btn-success">Order Now!</a>
+        </div>
+    </div>
+  </div>
+  <!-- Listen to our Customers -->
+  <div id="cust-reviews" class="container">
+    <div class="row" style="text-align: center;">
+        <h2>Listen to our Customers, What they would say about our Products and Services</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card mt-2 mb-2" width="100%">
+          <div class="card-body">
+            <div class="card-title">
+              Amit
+            </div>
+            <p class="card-text">
+              I stopped by early morning to purchase mini cupcakes. I ordered one dozen vegan mini 
+              cupcakes, and they were delicious! I like that they have a great selection of vegan 
+              cupcakes, just like the standard cupcakes. Give them a try!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mt-2 mb-2" width="100%">
+          <div class="card-body">
+            <div class="card-title">
+              Naman
+            </div>
+            <p class="card-text">
+              So happy to write a review for Sweet’s Cakes. The cake they made for my wedding was 
+              perfect. From the cake tasting to the delivery of the cake everyone at Patty’s Cakes 
+              was helpful and enthusiastic. They worked within the parameters set by the venue.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mt-2 mb-2" width="100%">
+          <div class="card-body">
+            <div class="card-title">
+              Mamta
+            </div>
+            <p class="card-text">
+              Had the gluten-free Chocolate Strawberry cream. I’m in love with this cupcake. 
+              It’s hard to find a gluten-free cupcake that is delicious and gluten-free. 
+              Sweet’s Cakes delivers. I would recommend everyone to just try once and you will get the taste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="custReviewCollapse" class="collapse row">
+      <div class="col-md-4">
+        <div class="card mt-2 mb-2" width="100%">
+          <div class="card-body">
+            <div class="card-title">
+              Amit
+            </div>
+            <p class="card-text">
+              I stopped by early morning to purchase mini cupcakes. I ordered one dozen vegan mini 
+              cupcakes, and they were delicious! I like that they have a great selection of vegan 
+              cupcakes, just like the standard cupcakes. Give them a try!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mt-2 mb-2" width="100%">
+          <div class="card-body">
+            <div class="card-title">
+              Naman
+            </div>
+            <p class="card-text">
+              So happy to write a review for Sweet’s Cakes. The cake they made for my wedding was 
+              perfect. From the cake tasting to the delivery of the cake everyone at Patty’s Cakes 
+              was helpful and enthusiastic. They worked within the parameters set by the venue.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mt-2 mb-2" width="100%">
+          <div class="card-body">
+            <div class="card-title">
+              Mamta
+            </div>
+            <p class="card-text">
+              Had the gluten-free Chocolate Strawberry cream. I’m in love with this cupcake. 
+              It’s hard to find a gluten-free cupcake that is delicious and gluten-free. 
+              Sweet’s Cakes delivers. I would recommend everyone to just try once and you will get the taste.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <p style="text-align: center;">
+        <button onclick="this.style.display = 'none';" class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#custReviewCollapse" aria-expanded="false" aria-controls="custReviewCollapse">
+          More
+        </button>
+      </p>
+    </div>
+  </div>
+  <!-- Leave a Review on our Products - Create a Form for Customers -->
+  <div id="leaveReview" class="container">
+    <div class="row">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title" style="text-align: center;">
+            <h3>Leave a Review on Our Products</h3>
+          </div>
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Email</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="emailReview" placeholder="email@example.com">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="staticEmail" class="col-sm-2 col-form-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="nameReview" placeholder="Enter Your Name">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Review</label>
+            <div class="col-sm-10">
+              <textarea id="textReview" class="form-contorl reviewText" placeholder="Enter you Review!" rows="5"></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <button class="align-center btn btn-primary" onclick="sendReview();">Send Review</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2 class="footerNote">Visit Again!</h2>
+  <!-- Footer of The Page -->
+  <footer>
+    <div class="footer-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 style="text-align: center;">Contact Details</h2>
+            <table>
+              <tr>
+                <td>Email:</td>
+                <td>sweetscakeshop@gmail.com</td>
+              </tr>
+              <tr>
+                <td rowspan>Address:</td>
+                <td>Ward 8/F, Plot 896, Street </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>69, Ahmedabad, Gujarat</td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td>986596563</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-md-8">
+            <h3 style="text-align: center;">About Us</h3>
+            <p>
+              Sweet's Cake Shop is focused on getting the joy your festival. We guarantee the quality 
+              in every single step of assembling the cake. We utilize 100 % Eggless Cake blend for 
+              Eggless Cakes and Pastries. We use Trans Fat-Free cream for all cakes and baked goods. 
+              Individuals who are cognizant about their wellbeing they can eat our cake without a doubt. 
+              For chocolate darlings, our ideal blends and exact elements for chocolate cakes, baked 
+              goods and sweets give a magnificent taste.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          Copyrights &copy; Sweet's Cake Shop
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
